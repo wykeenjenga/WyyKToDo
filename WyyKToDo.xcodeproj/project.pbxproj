@@ -16,6 +16,9 @@
 		CE2A21EC281FE1410092B85F /* WyyKToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A21EB281FE1410092B85F /* WyyKToDoTests.swift */; };
 		CE2A21F6281FE1410092B85F /* WyyKToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A21F5281FE1410092B85F /* WyyKToDoUITests.swift */; };
 		CE2A21F8281FE1410092B85F /* WyyKToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A21F7281FE1410092B85F /* WyyKToDoUITestsLaunchTests.swift */; };
+		CE2A2207281FF0CE0092B85F /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE2A2204281FF0CD0092B85F /* sound-rise.mp3 */; };
+		CE2A2208281FF0CE0092B85F /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE2A2205281FF0CE0092B85F /* sound-ding.mp3 */; };
+		CE2A2209281FF0CE0092B85F /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE2A2206281FF0CE0092B85F /* sound-tap.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		CE2A21F1281FE1410092B85F /* WyyKToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WyyKToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2A21F5281FE1410092B85F /* WyyKToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WyyKToDoUITests.swift; sourceTree = "<group>"; };
 		CE2A21F7281FE1410092B85F /* WyyKToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WyyKToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE2A2204281FF0CD0092B85F /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
+		CE2A2205281FF0CE0092B85F /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		CE2A2206281FF0CE0092B85F /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
+		CE2A2212281FF1DB0092B85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +105,15 @@
 		CE2A21D4281FE1390092B85F /* WyyKToDo */ = {
 			isa = PBXGroup;
 			children = (
-				CE2A21D5281FE1390092B85F /* WyyKToDoApp.swift */,
-				CE2A21D7281FE1390092B85F /* ContentView.swift */,
+				CE2A2212281FF1DB0092B85F /* Info.plist */,
+				CE2A220F281FF1250092B85F /* App */,
+				CE2A2210281FF1320092B85F /* View */,
+				CE2A220E281FF1160092B85F /* Utility */,
+				CE2A2211281FF16F0092B85F /* Model */,
+				CE2A220D281FF0FD0092B85F /* Style */,
+				CE2A220C281FF0F50092B85F /* Extension */,
+				CE2A220B281FF0E70092B85F /* Sound */,
 				CE2A21D9281FE1410092B85F /* Assets.xcassets */,
-				CE2A21DE281FE1410092B85F /* Persistence.swift */,
-				CE2A21E0281FE1410092B85F /* WyyKToDo.xcdatamodeld */,
 				CE2A21DB281FE1410092B85F /* Preview Content */,
 			);
 			path = WyyKToDo;
@@ -131,6 +142,62 @@
 				CE2A21F7281FE1410092B85F /* WyyKToDoUITestsLaunchTests.swift */,
 			);
 			path = WyyKToDoUITests;
+			sourceTree = "<group>";
+		};
+		CE2A220B281FF0E70092B85F /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A2205281FF0CE0092B85F /* sound-ding.mp3 */,
+				CE2A2204281FF0CD0092B85F /* sound-rise.mp3 */,
+				CE2A2206281FF0CE0092B85F /* sound-tap.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		CE2A220C281FF0F50092B85F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE2A220D281FF0FD0092B85F /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		CE2A220E281FF1160092B85F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CE2A220F281FF1250092B85F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A21D5281FE1390092B85F /* WyyKToDoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CE2A2210281FF1320092B85F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A21D7281FE1390092B85F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2A2211281FF16F0092B85F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A21DE281FE1410092B85F /* Persistence.swift */,
+				CE2A21E0281FE1410092B85F /* WyyKToDo.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +304,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2A2208281FF0CE0092B85F /* sound-ding.mp3 in Resources */,
+				CE2A2207281FF0CE0092B85F /* sound-rise.mp3 in Resources */,
 				CE2A21DD281FE1410092B85F /* Preview Assets.xcassets in Resources */,
+				CE2A2209281FF0CE0092B85F /* sound-tap.mp3 in Resources */,
 				CE2A21DA281FE1410092B85F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +498,10 @@
 				DEVELOPMENT_TEAM = J69KB9AJDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WyyKToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,9 +528,10 @@
 				DEVELOPMENT_TEAM = J69KB9AJDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WyyKToDo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
