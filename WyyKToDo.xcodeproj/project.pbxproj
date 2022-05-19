@@ -27,6 +27,13 @@
 		CE3A5EDF2834F706005B11FA /* ListRowItemview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EDE2834F706005B11FA /* ListRowItemview.swift */; };
 		CE3A5EE12834F9A4005B11FA /* CheckBoxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EE02834F9A4005B11FA /* CheckBoxStyle.swift */; };
 		CE3A5EE328353524005B11FA /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EE228353524005B11FA /* SoundPlayer.swift */; };
+		CE3A5EEB28362B6B005B11FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3A5EEA28362B6A005B11FA /* WidgetKit.framework */; };
+		CE3A5EED28362B6B005B11FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3A5EEC28362B6B005B11FA /* SwiftUI.framework */; };
+		CE3A5EF028362B6B005B11FA /* WyyKWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EEF28362B6B005B11FA /* WyyKWidget.swift */; };
+		CE3A5EF328362B71005B11FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3A5EF228362B71005B11FA /* Assets.xcassets */; };
+		CE3A5EF528362B71005B11FA /* WyyKWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EF128362B6B005B11FA /* WyyKWidget.intentdefinition */; };
+		CE3A5EF628362B71005B11FA /* WyyKWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CE3A5EF128362B6B005B11FA /* WyyKWidget.intentdefinition */; };
+		CE3A5EF928362B71005B11FA /* WyyKWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE3A5EE828362B69005B11FA /* WyyKWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +51,28 @@
 			remoteGlobalIDString = CE2A21D1281FE1390092B85F;
 			remoteInfo = WyyKToDo;
 		};
+		CE3A5EF728362B71005B11FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE2A21CA281FE1390092B85F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE3A5EE728362B69005B11FA;
+			remoteInfo = WyyKWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE3A5EFD28362B71005B11FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE3A5EF928362B71005B11FA /* WyyKWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE2A21D2281FE1390092B85F /* WyyKToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WyyKToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +99,13 @@
 		CE3A5EDE2834F706005B11FA /* ListRowItemview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemview.swift; sourceTree = "<group>"; };
 		CE3A5EE02834F9A4005B11FA /* CheckBoxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxStyle.swift; sourceTree = "<group>"; };
 		CE3A5EE228353524005B11FA /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		CE3A5EE828362B69005B11FA /* WyyKWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WyyKWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3A5EEA28362B6A005B11FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CE3A5EEC28362B6B005B11FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CE3A5EEF28362B6B005B11FA /* WyyKWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WyyKWidget.swift; sourceTree = "<group>"; };
+		CE3A5EF128362B6B005B11FA /* WyyKWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WyyKWidget.intentdefinition; sourceTree = "<group>"; };
+		CE3A5EF228362B71005B11FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE3A5EF428362B71005B11FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +130,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE3A5EE528362B69005B11FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A5EED28362B6B005B11FA /* SwiftUI.framework in Frameworks */,
+				CE3A5EEB28362B6B005B11FA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +148,8 @@
 				CE2A21D4281FE1390092B85F /* WyyKToDo */,
 				CE2A21EA281FE1410092B85F /* WyyKToDoTests */,
 				CE2A21F4281FE1410092B85F /* WyyKToDoUITests */,
+				CE3A5EEE28362B6B005B11FA /* WyyKWidget */,
+				CE3A5EE928362B6A005B11FA /* Frameworks */,
 				CE2A21D3281FE1390092B85F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +160,7 @@
 				CE2A21D2281FE1390092B85F /* WyyKToDo.app */,
 				CE2A21E7281FE1410092B85F /* WyyKToDoTests.xctest */,
 				CE2A21F1281FE1410092B85F /* WyyKToDoUITests.xctest */,
+				CE3A5EE828362B69005B11FA /* WyyKWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +271,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE3A5EE928362B6A005B11FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A5EEA28362B6A005B11FA /* WidgetKit.framework */,
+				CE3A5EEC28362B6B005B11FA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE3A5EEE28362B6B005B11FA /* WyyKWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CE3A5EEF28362B6B005B11FA /* WyyKWidget.swift */,
+				CE3A5EF128362B6B005B11FA /* WyyKWidget.intentdefinition */,
+				CE3A5EF228362B71005B11FA /* Assets.xcassets */,
+				CE3A5EF428362B71005B11FA /* Info.plist */,
+			);
+			path = WyyKWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,10 +301,12 @@
 				CE2A21CE281FE1390092B85F /* Sources */,
 				CE2A21CF281FE1390092B85F /* Frameworks */,
 				CE2A21D0281FE1390092B85F /* Resources */,
+				CE3A5EFD28362B71005B11FA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE3A5EF828362B71005B11FA /* PBXTargetDependency */,
 			);
 			name = WyyKToDo;
 			productName = WyyKToDo;
@@ -280,6 +349,23 @@
 			productReference = CE2A21F1281FE1410092B85F /* WyyKToDoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CE3A5EE728362B69005B11FA /* WyyKWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE3A5EFA28362B71005B11FA /* Build configuration list for PBXNativeTarget "WyyKWidgetExtension" */;
+			buildPhases = (
+				CE3A5EE428362B69005B11FA /* Sources */,
+				CE3A5EE528362B69005B11FA /* Frameworks */,
+				CE3A5EE628362B69005B11FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WyyKWidgetExtension;
+			productName = WyyKWidgetExtension;
+			productReference = CE3A5EE828362B69005B11FA /* WyyKWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +387,9 @@
 						CreatedOnToolsVersion = 13.3;
 						TestTargetID = CE2A21D1281FE1390092B85F;
 					};
+					CE3A5EE728362B69005B11FA = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = CE2A21CD281FE1390092B85F /* Build configuration list for PBXProject "WyyKToDo" */;
@@ -319,6 +408,7 @@
 				CE2A21D1281FE1390092B85F /* WyyKToDo */,
 				CE2A21E6281FE1410092B85F /* WyyKToDoTests */,
 				CE2A21F0281FE1410092B85F /* WyyKToDoUITests */,
+				CE3A5EE728362B69005B11FA /* WyyKWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -350,6 +440,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE3A5EE628362B69005B11FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A5EF328362B71005B11FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -365,6 +463,7 @@
 				CE2A21D6281FE1390092B85F /* WyyKToDoApp.swift in Sources */,
 				CE3A5ED728343D15005B11FA /* HideKeyBoard.swift in Sources */,
 				CE2A21E2281FE1410092B85F /* WyyKToDo.xcdatamodeld in Sources */,
+				CE3A5EF628362B71005B11FA /* WyyKWidget.intentdefinition in Sources */,
 				CE3A5EE12834F9A4005B11FA /* CheckBoxStyle.swift in Sources */,
 				CE3A5EDF2834F706005B11FA /* ListRowItemview.swift in Sources */,
 				CE3A5EE328353524005B11FA /* SoundPlayer.swift in Sources */,
@@ -389,6 +488,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE3A5EE428362B69005B11FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE3A5EF528362B71005B11FA /* WyyKWidget.intentdefinition in Sources */,
+				CE3A5EF028362B6B005B11FA /* WyyKWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -401,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = CE2A21D1281FE1390092B85F /* WyyKToDo */;
 			targetProxy = CE2A21F2281FE1410092B85F /* PBXContainerItemProxy */;
+		};
+		CE3A5EF828362B71005B11FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE3A5EE728362B69005B11FA /* WyyKWidgetExtension */;
+			targetProxy = CE3A5EF728362B71005B11FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,6 +635,7 @@
 		CE2A21FC281FE1410092B85F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +667,7 @@
 		CE2A21FD281FE1410092B85F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -657,6 +772,60 @@
 			};
 			name = Release;
 		};
+		CE3A5EFB28362B71005B11FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69KB9AJDV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WyyKWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WyyKWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyyksoftsinc.WyyKToDo.WyyKWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE3A5EFC28362B71005B11FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J69KB9AJDV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WyyKWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WyyKWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wyyksoftsinc.WyyKToDo.WyyKWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -692,6 +861,15 @@
 			buildConfigurations = (
 				CE2A2202281FE1410092B85F /* Debug */,
 				CE2A2203281FE1410092B85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3A5EFA28362B71005B11FA /* Build configuration list for PBXNativeTarget "WyyKWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE3A5EFB28362B71005B11FA /* Debug */,
+				CE3A5EFC28362B71005B11FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
